@@ -3,40 +3,48 @@
 Data Bootcamp Module 11: UFO Sightings with JavaScript
 ## Overview of Project
 
-### The purpose of this project is to create a  
+### The purpose of this project is to create an html website with tables and filters using JavaScript. We are given a series of UFO's sightings in the US, where each has a date (datetime), city, state, country, shape of the sighting (shape), duration and comments. To have a complete website, we had to write the index.html, the app.js (which were connected with the data.js) and a stly.css to customize the site. 
 
 
 
 ## Resources
 **For this analysis, the following resources were used**:
-- Data Sources: hawaii.sqlite
+- Data Sources: data.js
 
 
 
 ## Results
 
-**Three major points from the two analysis deliverables**
+**Describe to Dana how someone might use the new webpage by walking her through the process of using the search criteria. Use images of your webpage during the filtering process to support your explanation.**
 
-- There is no major difference between the average temperatures in June and December. While June has a mean temperature of 75 F, December has a mean temperature of 71 F, which is not a big difference. It is also important to consider that both of them have enough data to make a good sample (even though there are more records in June than on December).
-
-- There is a major difference on the minimum temperature recorded in June and December. The minimum temperature recorded in June is 64 F, while the one recorded in December is only 56 F. We also have to take into consideration that the lowest temperature in December was for the year 2014, but in that same year June recorded one the highest temperatures ever (84 F on 06 - 24 - 2014).
-
-- The temperatures recorded on December have a slightly greater standard deviation than the ones recorded on June, so we can say that the temperature on the island varies more in December than in June.
-
-Tables:
+- The website is pretty simple, but it allows the user to filter according a certain criteria. First there is a description of the page, with a title, an image and an introduction:
 
 ![This is an image](https://github.com/HansFeddersen/surfs_up/blob/main/More/Temperatures_recorded.png)
 
-**Two additional queries to perform to gather more weather data for June and December**
+-In the bottom part of the website, the user can filter out, by writing the desired criteria in the respective box (it is not necessary to fill out all the boxes, but it can be done for a more specific filter). Examples as follows:
+
+First, the table with no fitlers applied:
+
+![This is an image](https://github.com/HansFeddersen/surfs_up/blob/main/More/Temperatures_recorded.png)
+
+Second, the table with only one filter applied:
+
+![This is an image](https://github.com/HansFeddersen/surfs_up/blob/main/More/Temperatures_recorded.png)
+
+
+Third, the table with two filters applied:
+
+![This is an image](https://github.com/HansFeddersen/surfs_up/blob/main/More/Temperatures_recorded.png)
+
+
+
+Summary:
+
+
+**One drawback of this new design**
 
 - We can add a query to obtain the precipitation levels for both months and that way have a more complex study. In that case, the query would be as follows:
 
-![This is an image](https://github.com/HansFeddersen/surfs_up/blob/main/More/precipitation_query.png)
+**Two recommendations for further development**
 
-Clearly it rains much more in December than in June, as we can see in the following tables:
-
-![This is an image](https://github.com/HansFeddersen/surfs_up/blob/main/More/precipitation_recorded.png)
-
-- We could also write a query to obtain the minimum, maximum and average temperature/precipitation for each of the 9 stations available and we will see that station USC00516128 (MANOA LYON ARBO 785.2, HI US), not only has the lowest average temperature of them all, but also it is the one that shows the greatest average of precipitation (it would not be recommendable to put any ice cream shop near that station). The query to obtain that information and results are as follows:
-
-![This is an image](https://github.com/HansFeddersen/surfs_up/blob/main/More/station_queries.png)
+- We can add a query to obtain the precipitation levels for both months and that way have a more complex study. In that case, the query would be as follows:
